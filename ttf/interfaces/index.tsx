@@ -1,7 +1,8 @@
 export interface ItemData {
   img: string,
   title: string,
-  subtitle?: string
+  subtitle?: string,
+  quality: string
 }
 
 export interface ItemProps {

@@ -87,6 +87,7 @@ const Home: NextPage = () => {
     img: '/baustahl.png',
     title: 'Kaltstauhstahl',
     subtitle: 'SwissBain',
+    quality: "Gut"
   }
 
   const filterData: FilterData = {

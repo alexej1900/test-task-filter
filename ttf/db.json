@@ -1,0 +1,75 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "img": "/einsatzstahl.png",
+      "title": "Einsatzstahl",
+      "quality": "Gut"
+    },
+    {
+      "id": 2,
+      "title": "Einsatzstahl",
+      "img": "/einsatzstahl.png",
+      "subtitle": "Unlegierter Einsatzstahl",
+      "quality": "Sehr Gut"
+    },
+    {
+      "id": 3,
+      "img": "/kaltstauchstahl.png",
+      "title": "Kaltstauchstahl",
+      "quality": "Extra"
+    },
+    {
+      "id": 4,
+      "img": "/kettenstahl.png",
+      "title": "Kettenstahl",
+      "quality": "Gut"
+    },
+    {
+      "id": 5,
+      "img": "/baustahl.png",
+      "title": "Baustahl",
+      "quality": "Sehr Gut"
+    },
+    {
+      "id": 6,
+      "img": "/vergütungstahl.png",
+      "title": "Vergütungstahl",
+      "quality": "Extra"
+    },
+    {
+      "id": 7,
+      "img": "/kaltstauchstahl.png",
+      "title": "Kaltstauchstahl",
+      "subtitle": "SwissBain",
+      "quality": "Gut"
+    },
+    {
+      "id": 8,
+      "img": "/automatenstahl.png",
+      "title": "Automatenstahl",
+      "subtitle": "Weichautomatenstahl",
+      "quality": "Sehr Gut"
+    },
+    {
+      "id": 9,
+      "img": "/automatenstahl.png",
+      "title": "Automatenstahl",
+      "quality": "Extra"
+    },
+    {
+      "id": 10,
+      "img": "/einsatzstahl.png",
+      "title": "Einsatzstahl",
+      "subtitle": "mit Biel",
+      "quality": "Extra"
+    },
+    {
+      "id": 11,
+      "img": "/vergütungstahl.png",
+      "title": "Vergütungstahl",
+      "subtitle": "Unlegierter Vergütungstahl mit Biel",
+      "quality": "Sehr Gut"
+    }
+  ]
+}
