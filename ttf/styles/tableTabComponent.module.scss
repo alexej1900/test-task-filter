@@ -1,0 +1,27 @@
+.tabBlock {
+  position: relative;
+  text-align: center;
+
+  height: 70px;
+  width: 250px;
+  color: #000;
+
+  line-height: 70px;
+  font-size: x-large;
+}
+
+.active {
+  background-color: #000;
+  color: rgb(254, 254, 254);
+}
+
+.active::after {
+  content: " ";
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  margin-left: -20px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+}

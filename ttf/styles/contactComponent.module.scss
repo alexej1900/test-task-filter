@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 530px;
+  height: 110px;
+  padding: 20px;
+  background-color: #D44431;
+  margin-left: 1050px;
+}
+
+.contact {
+  &Content {
+    color: #ffffff;
+  }
+
+  &Title {
+    margin: 0;
+    font-size: xx-large;
+    font-weight: 600;
+  }
+
+  &Subtitle {
+    margin: 0;
+    font-size: x-large;
+    font-weight: 400;
+  }
+
+  &Img {
+    width: 70px;
+    height: 70px;
+  }
+
+ 
+
+  
+}

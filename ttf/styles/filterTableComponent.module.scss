@@ -1,0 +1,99 @@
+.filterTable {
+  // border-bottom: 1px solid gray;
+  padding: 10px;
+
+  &Header {
+    display: flex;
+    align-items: center;
+  }
+
+  &Arrow {
+    width: 40px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(255, 0, 0);
+
+    &:hover {
+      cursor: pointer;
+      color: rgb(250, 107, 107);
+    }
+  }
+
+  &Name {
+    width: 300px;
+  }
+
+  &Tab {
+    width: 80px;
+    text-align: center;
+    font-size: large;
+  }
+
+  &Body {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &List {
+    margin: 0;
+    padding: 0;
+  }
+
+  &Title {
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+
+  &Cell {
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: large;
+    border: 1px solid grey;
+    border-top: none;
+
+    &:hover {
+      background-color: rgb(95, 94, 94);
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  &Reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+  }
+
+  &ResetText {
+    height: 50px;
+    margin-right: 20px;
+    line-height: 50px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+  }
+
+  &ResetButton {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+
+    &:hover {
+      background-color: rgb(255, 1, 1);
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
