@@ -1,35 +1,51 @@
 import { useState } from 'react';
 import { FilterProps } from '../interfaces';
+import QualityListComponent from './qualityListComponent';
 import style from '../styles/filterTableComponent.module.scss';
 
-export default function FilterTableComponent ( { filterTableName, filterProps }  : FilterProps ) {
-  const [isOpen, setIsOpen] = useState(false)
+export default function FilterTableComponent ( { filterTableName, filterProps }: FilterProps ) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isReset, setIsReset] = useState('');
+
+  const onClickHandle = () => setIsOpen(!isOpen);
+
+  const onCloseClickHandle = () => {
+    setIsReset('');
+    setTimeout(() => setIsReset('1'), 300);
+  }
 
   return (
     <div className={style.filterTable}>
       <div className={style.filterTableHeader}>
-        <div className={style.filterTableArrow}>
-          {isOpen ? <div>&and;</div> : <div>&or;</div>}
+        <div className={style.filterTableArrow} onClick={onClickHandle}>
+          {isOpen 
+            ? <div className={style.filterTableArrowSign}>&#8249;</div> 
+            : <div className={style.filterTableArrowSign}>&#8250;</div>
+          }
         </div>
         <h2 className={style.filterTableName}>{filterTableName}</h2>
         <div className={style.filterTableTab}>Gut</div>
         <div className={style.filterTableTab}>Sehr Gut</div>
         <div className={style.filterTableTab}>Extra</div>
       </div>
-      <ul className={style.filterTableList}>
-        {filterProps.map((item) => (
-          <li className={style.filterTableBody} key={item.id}>
-            <h2 className={style.filterTableTitle}>{item.title}</h2>
-            <div className={style.filterTableCell}>+</div>
-            <div className={style.filterTableCell}>++</div>
-            <div className={style.filterTableCell}>+++</div>
-          </li>
-        ))}
-      </ul>
-      <div className={style.filterTableReset}>
-        <p className={style.filterTableResetText}>Auswahl löschen</p>
-        <div className={style.filterTableResetButton}>&times;</div>
-      </div>
+
+      {isOpen ? (
+        <>
+          <ul className={style.filterTableList}>
+            {filterProps.map((item) => (
+              <li className={style.filterTableBody} key={item}>
+                <h2 className={style.filterTableTitle}>{item}</h2>
+                <QualityListComponent reset={isReset}/>
+              </li>
+            ))}
+          </ul>
+            <div className={style.filterTableReset}>
+              <p className={style.filterTableResetText}>Auswahl löschen</p>
+              <div className={style.filterTableResetButton} onClick={onCloseClickHandle}>&times;</div>
+            </div>
+        </>
+        ) : null
+    }
     </div>
   )
 }

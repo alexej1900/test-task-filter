@@ -5,7 +5,11 @@
   height: 110px;
   padding: 20px;
   background-color: #D44431;
-  margin-left: 1050px;
+
+  &:hover .contactContent{
+    cursor: pointer;
+    color: #a0a0a0;
+  }
 }
 
 .contact {
@@ -29,8 +33,4 @@
     width: 70px;
     height: 70px;
   }
-
- 
-
-  
 }

@@ -3,11 +3,15 @@
   text-align: center;
 
   height: 70px;
-  width: 250px;
+  width: 50%;
   color: #000;
 
   line-height: 70px;
   font-size: x-large;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .active {

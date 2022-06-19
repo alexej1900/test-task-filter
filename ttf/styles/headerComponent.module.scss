@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 50px;
+
+  border-bottom: 3px solid grey;
+
+  &:after {
+    content:"";
+    background: -webkit-linear-gradient(0deg, rgb(176, 1, 1) 0%, rgb(240, 93, 59) 35%, rgb(255, 170, 0) 100%);
+    display: block;
+    height:3px;
+    width: 800px;
+    position: absolute;
+    bottom: -3px;
+  }
+
+  &RightBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  .closeButton {
+    width: 100px;
+    text-align: center;
+    font-size: 100px;
+    line-height: 100px;
+    color: rgb(0, 0, 0);
+
+    &:hover {
+      cursor: pointer;
+      color: #a0a0a0;
+    }
+  }
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 400;
+}

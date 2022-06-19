@@ -4,72 +4,116 @@
       "id": "1",
       "img": "/einsatzstahl.png",
       "title": "Einsatzstahl",
-      "quality": "Gut"
+      "Zerspanung": "Gut",
+      "Ziehen": "Sehr Gut",
+      "Kettenherstellung": "Gut",
+      "Dehngrenze": "Gut",
+      "Zähigkeit": "Extra"
     },
     {
       "id": 2,
       "title": "Einsatzstahl",
       "img": "/einsatzstahl.png",
       "subtitle": "Unlegierter Einsatzstahl",
-      "quality": "Sehr Gut"
+      "Zerspanung": "Sehr Gut",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Gut",
+      "Dehngrenze": "Gut",
+      "Zähigkeit": "Extra"
     },
     {
       "id": 3,
       "img": "/kaltstauchstahl.png",
       "title": "Kaltstauchstahl",
-      "quality": "Extra"
+      "Zerspanung": "Extra",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Gut",
+      "Dehngrenze": "Sehr Gut",
+      "Zähigkeit": "Sehr Gut"
     },
     {
       "id": 4,
       "img": "/kettenstahl.png",
       "title": "Kettenstahl",
-      "quality": "Gut"
+      "Zerspanung": "Gut",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Gut",
+      "Dehngrenze": "Extra",
+      "Zähigkeit": "Sehr Gut"
     },
     {
       "id": 5,
       "img": "/baustahl.png",
       "title": "Baustahl",
-      "quality": "Sehr Gut"
+      "Zerspanung": "Extra",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Sehr Gut",
+      "Dehngrenze": "Extra",
+      "Zähigkeit": "Sehr Gut"
     },
     {
       "id": 6,
-      "img": "/vergütungstahl.png",
+      "img": "/vergutungstahl.png",
       "title": "Vergütungstahl",
-      "quality": "Extra"
+      "Zerspanung": "Extra",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Sehr Gut",
+      "Dehngrenze": "Extra",
+      "Zähigkeit": "Sehr Gut"
     },
     {
       "id": 7,
       "img": "/kaltstauchstahl.png",
       "title": "Kaltstauchstahl",
       "subtitle": "SwissBain",
-      "quality": "Gut"
+      "Zerspanung": "Gut",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Sehr Gut",
+      "Dehngrenze": "Extra",
+      "Zähigkeit": "Extra"
     },
     {
       "id": 8,
       "img": "/automatenstahl.png",
       "title": "Automatenstahl",
       "subtitle": "Weichautomatenstahl",
-      "quality": "Sehr Gut"
+      "Zerspanung": "Extra",
+      "Ziehen": "Gut",
+      "Kettenherstellung": "Sehr Gut",
+      "Dehngrenze": "Extra",
+      "Zähigkeit": "Sehr Gut"
     },
     {
       "id": 9,
       "img": "/automatenstahl.png",
       "title": "Automatenstahl",
-      "quality": "Extra"
+      "Zerspanung": "Extra",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Sehr Gut",
+      "Dehngrenze": "Gut",
+      "Zähigkeit": "Sehr Gut"
     },
     {
       "id": 10,
       "img": "/einsatzstahl.png",
       "title": "Einsatzstahl",
       "subtitle": "mit Biel",
-      "quality": "Extra"
+      "Zerspanung": "Extra",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Sehr Gut",
+      "Dehngrenze": "Extra",
+      "Zähigkeit": "Sehr Gut"
     },
     {
       "id": 11,
-      "img": "/vergütungstahl.png",
+      "img": "/vergutungstahl.png",
       "title": "Vergütungstahl",
       "subtitle": "Unlegierter Vergütungstahl mit Biel",
-      "quality": "Sehr Gut"
+      "Zerspanung": "Extra",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Sehr Gut",
+      "Dehngrenze": "Extra",
+      "Zähigkeit": "Sehr Gut"
     }
   ]
 }
