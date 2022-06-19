@@ -1,12 +1,25 @@
 import { useEffect, useState } from 'react';
 import style from '../styles/filterTableComponent.module.scss';
 
-const QUALITY = ['+','++', '+++'];
+type TQuality = {
+  [key: string]: string
+}
 
-export default function QualityListComponent ({reset}: {reset: string}) {
+type QualityProps = {
+  reset: string; 
+  item: string;
+  onClick: (item: string, quality: string) => void
+}
+
+const QUALITY: TQuality = {'+': 'Gut', '++': 'Sehr Gut', '+++': 'Extra'};
+
+export default function QualityListComponent ({reset, item, onClick}: QualityProps) {
   const [isQualityClicked, setQualityIsClicked] = useState(reset);
 
-  const onQualityClickHandle = (quality: string) => setQualityIsClicked(quality);
+  const onQualityClickHandle = (quality: string) => {
+    setQualityIsClicked(quality);
+    onClick(item, quality);
+  };
 
   useEffect(() => {
     setQualityIsClicked(reset);
@@ -14,14 +27,14 @@ export default function QualityListComponent ({reset}: {reset: string}) {
 
   return (
     <ul className={style.filterTableQuality}>
-      {QUALITY.map((quality) => (
+      {Object.keys(QUALITY).map((quality) => (
         <li 
           key={quality} 
-          className={isQualityClicked !== quality
+          className={isQualityClicked !== QUALITY[quality as keyof TQuality]
             ? `${style.filterTableCell}` 
             : `${style.filterTableCell} ${style.filterTableCellActive}`}
         >
-          <div onClick={() => onQualityClickHandle(quality)}>
+          <div onClick={() => onQualityClickHandle(QUALITY[quality as keyof TQuality])}>
             {quality}
           </div>
         </li>

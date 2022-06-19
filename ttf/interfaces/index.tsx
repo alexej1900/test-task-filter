@@ -19,6 +19,16 @@ export interface FilterProps {
   filterProps: string[]
 }
 
+export type FilterData = 'Gut' | 'Sehr Gut' | 'Extra';
+
+export interface FilterStateData {
+  Zerspanung: FilterData | null,
+  Ziehen: FilterData | null,
+  Kettenherstellung: FilterData | null,
+  Dehngrenze: FilterData | null,
+  Zähigkeit: FilterData | null
+}
+
 export interface FilterType {
   [key: string]: string[]
 }

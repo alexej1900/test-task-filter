@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { FilterProps } from '../interfaces';
 import QualityListComponent from './qualityListComponent';
 import style from '../styles/filterTableComponent.module.scss';
@@ -6,12 +7,18 @@ import style from '../styles/filterTableComponent.module.scss';
 export default function FilterTableComponent ( { filterTableName, filterProps }: FilterProps ) {
   const [isOpen, setIsOpen] = useState(false);
   const [isReset, setIsReset] = useState('');
+  const dispatch = useDispatch();
 
   const onClickHandle = () => setIsOpen(!isOpen);
 
   const onCloseClickHandle = () => {
     setIsReset('');
     setTimeout(() => setIsReset('1'), 300);
+    dispatch({type: 'RESET_FILTER'});
+  }
+
+  const onQualityClickHandle = (item: string, quality: string) => {
+    dispatch({type: 'ADD_FILTER', payload: {[item]: quality}});
   }
 
   return (
@@ -35,7 +42,7 @@ export default function FilterTableComponent ( { filterTableName, filterProps }:
             {filterProps.map((item) => (
               <li className={style.filterTableBody} key={item}>
                 <h2 className={style.filterTableTitle}>{item}</h2>
-                <QualityListComponent reset={isReset}/>
+                <QualityListComponent onClick={onQualityClickHandle} item={item} reset={isReset}/>
               </li>
             ))}
           </ul>

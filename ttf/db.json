@@ -3,6 +3,7 @@
     {
       "id": "1",
       "img": "/einsatzstahl.png",
+      "type": "walzstahl",
       "title": "Einsatzstahl",
       "Zerspanung": "Gut",
       "Ziehen": "Sehr Gut",
@@ -14,6 +15,7 @@
       "id": 2,
       "title": "Einsatzstahl",
       "img": "/einsatzstahl.png",
+      "type": "walzstahl",
       "subtitle": "Unlegierter Einsatzstahl",
       "Zerspanung": "Sehr Gut",
       "Ziehen": "Extra",
@@ -24,6 +26,7 @@
     {
       "id": 3,
       "img": "/kaltstauchstahl.png",
+      "type": "blankstahl",
       "title": "Kaltstauchstahl",
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
@@ -34,6 +37,7 @@
     {
       "id": 4,
       "img": "/kettenstahl.png",
+      "type": "blankstahl",
       "title": "Kettenstahl",
       "Zerspanung": "Gut",
       "Ziehen": "Extra",
@@ -44,6 +48,7 @@
     {
       "id": 5,
       "img": "/baustahl.png",
+      "type": "walzstahl",
       "title": "Baustahl",
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
@@ -54,6 +59,7 @@
     {
       "id": 6,
       "img": "/vergutungstahl.png",
+      "type": "walzstahl",
       "title": "Vergütungstahl",
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
@@ -64,6 +70,7 @@
     {
       "id": 7,
       "img": "/kaltstauchstahl.png",
+      "type": "blankstahl",
       "title": "Kaltstauchstahl",
       "subtitle": "SwissBain",
       "Zerspanung": "Gut",
@@ -75,6 +82,7 @@
     {
       "id": 8,
       "img": "/automatenstahl.png",
+      "type": "blankstahl",
       "title": "Automatenstahl",
       "subtitle": "Weichautomatenstahl",
       "Zerspanung": "Extra",
@@ -86,6 +94,7 @@
     {
       "id": 9,
       "img": "/automatenstahl.png",
+      "type": "blankstahl",
       "title": "Automatenstahl",
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
@@ -96,6 +105,7 @@
     {
       "id": 10,
       "img": "/einsatzstahl.png",
+      "type": "walzstahl",
       "title": "Einsatzstahl",
       "subtitle": "mit Biel",
       "Zerspanung": "Extra",
@@ -107,6 +117,7 @@
     {
       "id": 11,
       "img": "/vergutungstahl.png",
+      "type": "blankstahl",
       "title": "Vergütungstahl",
       "subtitle": "Unlegierter Vergütungstahl mit Biel",
       "Zerspanung": "Extra",
