@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { FilterStateData, ItemData } from '../interfaces';
 import ItemComponent from './itemComponent';
 import TitleComponent from './titleComponent';
+import { FilterStateData, ItemData } from '../interfaces';
 import style from '../styles/itemListComponent.module.scss';
 
 export default function ItemListComponent ({data}: {data: ItemData[]}) {
@@ -12,18 +12,17 @@ export default function ItemListComponent ({data}: {data: ItemData[]}) {
   useEffect(() => {
     const filterKeys = Object.keys(filterData);
     let stateData = data;
-    let resData: ItemData[] = [];
-
+    
     filterKeys.forEach((key) => {
       if (filterData[key as keyof FilterStateData] !== null) {
-        resData = stateData.filter((item) => {
+        stateData = stateData.filter((item) => {
           return item[key as keyof ItemData] === filterData[key as keyof FilterStateData];
         });
       }
     });
 
-    setState(resData);
-  }, [filterData]);
+    setState(stateData);
+  }, [filterData, data]);
 
   return (
     <div className={style.container}>
@@ -35,7 +34,9 @@ export default function ItemListComponent ({data}: {data: ItemData[]}) {
             ? state.map((item) => (
               <ItemComponent itemProps={item} key={item.id}/>
             ))
-            : <div className={style.itemBlock}>	&#9668; Verwenden Sie den Filter auf der linken Seite</div>
+            : <div className={style.itemBlock}>
+                Es gibt keine Produkte, die den Filterparametern entsprechen
+              </div>
           }
         </ul>
       </div>

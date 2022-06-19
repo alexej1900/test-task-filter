@@ -8,6 +8,8 @@
       "Zerspanung": "Gut",
       "Ziehen": "Sehr Gut",
       "Kettenherstellung": "Gut",
+      "Kaltumformen": "Gut",
+      "Schmieden": "Gut",
       "Dehngrenze": "Gut",
       "Zähigkeit": "Extra"
     },
@@ -20,6 +22,8 @@
       "Zerspanung": "Sehr Gut",
       "Ziehen": "Extra",
       "Kettenherstellung": "Gut",
+      "Kaltumformen": "Gut",
+      "Schmieden": "Sehr Gut",
       "Dehngrenze": "Gut",
       "Zähigkeit": "Extra"
     },
@@ -31,6 +35,8 @@
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
       "Kettenherstellung": "Gut",
+      "Kaltumformen": "Gut",
+      "Schmieden": "Extra",
       "Dehngrenze": "Sehr Gut",
       "Zähigkeit": "Sehr Gut"
     },
@@ -42,6 +48,8 @@
       "Zerspanung": "Gut",
       "Ziehen": "Extra",
       "Kettenherstellung": "Gut",
+      "Kaltumformen": "Extra",
+      "Schmieden": "Sehr Gut",
       "Dehngrenze": "Extra",
       "Zähigkeit": "Sehr Gut"
     },
@@ -53,6 +61,8 @@
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
       "Kettenherstellung": "Sehr Gut",
+      "Kaltumformen": "Extra",
+      "Schmieden": "Sehr Gut",
       "Dehngrenze": "Extra",
       "Zähigkeit": "Sehr Gut"
     },
@@ -64,6 +74,8 @@
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
       "Kettenherstellung": "Sehr Gut",
+      "Kaltumformen": "Gut",
+      "Schmieden": "Sehr Gut",
       "Dehngrenze": "Extra",
       "Zähigkeit": "Sehr Gut"
     },
@@ -76,6 +88,8 @@
       "Zerspanung": "Gut",
       "Ziehen": "Extra",
       "Kettenherstellung": "Sehr Gut",
+      "Kaltumformen": "Gut",
+      "Schmieden": "Gut",
       "Dehngrenze": "Extra",
       "Zähigkeit": "Extra"
     },
@@ -88,6 +102,8 @@
       "Zerspanung": "Extra",
       "Ziehen": "Gut",
       "Kettenherstellung": "Sehr Gut",
+      "Kaltumformen": "Extra",
+      "Schmieden": "Gut",
       "Dehngrenze": "Extra",
       "Zähigkeit": "Sehr Gut"
     },
@@ -99,6 +115,8 @@
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
       "Kettenherstellung": "Sehr Gut",
+      "Kaltumformen": "Extra",
+      "Schmieden": "Extra",
       "Dehngrenze": "Gut",
       "Zähigkeit": "Sehr Gut"
     },
@@ -111,6 +129,8 @@
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
       "Kettenherstellung": "Sehr Gut",
+      "Kaltumformen": "Extra",
+      "Schmieden": "Sehr Gut",
       "Dehngrenze": "Extra",
       "Zähigkeit": "Sehr Gut"
     },
@@ -123,6 +143,22 @@
       "Zerspanung": "Extra",
       "Ziehen": "Extra",
       "Kettenherstellung": "Sehr Gut",
+      "Kaltumformen": "Gut",
+      "Schmieden": "Sehr Gut",
+      "Dehngrenze": "Extra",
+      "Zähigkeit": "Sehr Gut"
+    },
+    {
+      "id": 12,
+      "img": "/vergutungstahl.png",
+      "type": "blankstahl",
+      "title": "Vergütungstahl",
+      "subtitle": "Unlegierter Vergütungstahl mit Biel",
+      "Zerspanung": "Gut",
+      "Ziehen": "Extra",
+      "Kettenherstellung": "Sehr Gut",
+      "Kaltumformen": "Extra",
+      "Schmieden": "Sehr Gut",
       "Dehngrenze": "Extra",
       "Zähigkeit": "Sehr Gut"
     }

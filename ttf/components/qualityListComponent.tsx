@@ -1,15 +1,6 @@
 import { useEffect, useState } from 'react';
+import { QualityProps, TQuality } from '../interfaces';
 import style from '../styles/filterTableComponent.module.scss';
-
-type TQuality = {
-  [key: string]: string
-}
-
-type QualityProps = {
-  reset: string; 
-  item: string;
-  onClick: (item: string, quality: string) => void
-}
 
 const QUALITY: TQuality = {'+': 'Gut', '++': 'Sehr Gut', '+++': 'Extra'};
 

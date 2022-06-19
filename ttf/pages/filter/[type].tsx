@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import FilterBlockComponent from '../../components/filterBlockComponent';
 import HeaderComponent from '../../components/headerComponent';
 import ItemListComponent from '../../components/itemListComponent';
@@ -7,6 +8,9 @@ import styles from '../../styles/filter.module.scss';
 const FilterPage = ({ items }: { items: ItemData[] }) => {
   return (
     <>
+      <Head>
+        <title>Stahl Filter</title>
+      </Head>
       <div className={styles.container}>
         <HeaderComponent/>
         <main>

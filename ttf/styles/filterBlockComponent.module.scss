@@ -1,6 +1,11 @@
 .container {
   width: 45%;
   margin-right: 5%;
+
+  @media all and (max-width: 960px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .tableTabsBlock{
@@ -10,7 +15,6 @@
 }
 
 .tableList {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
