@@ -14,10 +14,19 @@ a {
   box-sizing: border-box;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
 
 main {
   display: flex;
+
+  @media all and (max-width: 960px) {
+    flex-direction: column;
+  }
 }

@@ -3,24 +3,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 50px;
-
   border-bottom: 3px solid grey;
 
-  &:after {
-    content:"";
-    background: -webkit-linear-gradient(0deg, rgb(176, 1, 1) 0%, rgb(240, 93, 59) 35%, rgb(255, 170, 0) 100%);
-    display: block;
-    height:3px;
-    width: 800px;
-    position: absolute;
-    bottom: -3px;
+  @media all and (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 10px;
   }
 
   &RightBlock {
     display: flex;
     align-items: center;
+
+    @media all and (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   .closeButton {
@@ -29,6 +26,15 @@
     font-size: 100px;
     line-height: 100px;
     color: rgb(0, 0, 0);
+
+    @media all and (max-width: 1420px) {
+      font-size: 60px;
+    }
+
+    @media all and (max-width: 960px) {
+      width: 70px;
+      font-size: 50px;
+    }
 
     &:hover {
       cursor: pointer;
@@ -40,4 +46,12 @@
 .title {
   font-size: 42px;
   font-weight: 400;
+
+  @media all and (max-width: 1420px) {
+      font-size: 32px;
+  }
+
+  @media all and (max-width: 600px) {
+    text-align: center;
+  }
 }

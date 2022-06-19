@@ -6,6 +6,8 @@ export interface ItemData {
   Zerspanung?: string,
   Ziehen?: string,
   Kettenherstellung?: string,
+  Kaltumformen?: string,
+  Schmieden?: string,
   Dehngrenze?: string,
   Zähigkeit?: string
 }
@@ -19,6 +21,26 @@ export interface FilterProps {
   filterProps: string[]
 }
 
+export type FilterData = 'Gut' | 'Sehr Gut' | 'Extra';
+
+export interface FilterStateData {
+  Zerspanung: FilterData | null,
+  Ziehen: FilterData | null,
+  Kettenherstellung: FilterData | null,
+  Dehngrenze: FilterData | null,
+  Zähigkeit: FilterData | null
+}
+
 export interface FilterType {
   [key: string]: string[]
+}
+
+export interface TQuality {
+  [key: string]: string
+}
+
+export interface QualityProps {
+  reset: string; 
+  item: string;
+  onClick: (item: string, quality: string) => void
 }

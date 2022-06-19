@@ -5,15 +5,24 @@
   &Header {
     display: flex;
     align-items: center;
+    width: 100%;
   }
 
   &Arrow {
-    width: 40px;
-    text-align: center;
-    margin-right: 10px;
+    display: flex;
+    width: 70%;
+    min-width: 210px;
     font-size: 40px;
     font-weight: 900;
     color: rgb(255, 0, 0);
+
+    @media all and (max-width: 480px) {
+      min-width: 160px;
+    }
+
+    @media all and (max-width: 480px) {
+      min-width: 120px;
+    }
 
     &Sign {
       transform: rotate(90deg);
@@ -26,19 +35,36 @@
   }
 
   &Name {
-    min-width: 300px;
+    width: 70%;
+    min-width: 210px;
+    margin-left: 20px;
+    color: #000;
+    font-size: x-large;
+
+    @media all and (max-width: 480px) {
+      font-size: 18px;
+    }
+
+    @media all and (max-width: 350px) {
+      font-size: 14px;
+      min-width: 120px;
+    }
   }
 
   &Tab {
-    width: calc((100% - 380px)/2.7);
+    min-width: 65px;
     text-align: center;
     font-size: large;
+
+    @media all and (max-width: 480px) {
+      font-size: 14px;
+      min-width: 45px;
+    }
   }
 
   &Body {
     display: flex;
     align-items: center;
-    list-style: none;
   }
 
   &List {
@@ -48,28 +74,43 @@
 
   &Title {
     margin: 0;
-    width: 350px;
+    width: 70%;
+    min-width: 210px;
     height: 50px;
     line-height: 50px;
     border-bottom: 1px solid grey;
     border-right: 1px solid grey;
+
+    @media all and (max-width: 480px) {
+      font-size: 18px;
+      min-width: 160px;
+    }
+
+    @media all and (max-width: 350px) {
+      font-size: 14px;
+      min-width: 120px;
+    }
   }
 
   &Quality {
     display: flex;
     margin: 0;
     padding: 0;
-    width: calc(100% - 350px);
   }
 
   &Cell {
     width: 33%;
+    min-width: 65px;
     height: 50px;
     line-height: 50px;
     text-align: center;
     font-size: large;
     border: 1px solid grey;
     border-top: none;
+
+    @media all and (max-width: 480px) {
+      min-width: 45px;
+    }
 
     &Active {
       background-color: rgb(95, 94, 94);
@@ -97,6 +138,10 @@
     line-height: 50px;
     color: rgb(255, 0, 0);
     font-size: 30px;
+
+    @media all and (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 
   &ResetButton {
