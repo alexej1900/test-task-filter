@@ -14,7 +14,9 @@ export default function FilterTableComponent ( { filterTableName, filterProps }:
   const onCloseClickHandle = () => {
     setIsReset('');
     setTimeout(() => setIsReset('1'), 300);
-    dispatch({type: 'RESET_FILTER'});
+
+    filterTableName === 'Formgebung' && dispatch({type: 'RESET_FORMGEBUNG_FILTER'});
+    filterTableName === 'Eigenschaft' && dispatch({type: 'RESET_EIGENSCHAFT_FILTER'});
   }
 
   const onQualityClickHandle = (item: string, quality: string | null) => {
