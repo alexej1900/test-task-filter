@@ -25,7 +25,9 @@ export type FilterData = 'Gut' | 'Sehr Gut' | 'Extra';
 
 export interface FilterStateData {
   Zerspanung: FilterData | null,
+  Kaltumformen: FilterData | null,
   Ziehen: FilterData | null,
+  Schmieden: FilterData | null,
   Kettenherstellung: FilterData | null,
   Dehngrenze: FilterData | null,
   Zähigkeit: FilterData | null
