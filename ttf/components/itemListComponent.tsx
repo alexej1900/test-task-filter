@@ -7,21 +7,25 @@ import style from '../styles/itemListComponent.module.scss';
 
 export default function ItemListComponent ({data}: {data: ItemData[]}) {
   const filterData = useSelector((state) => state) as FilterStateData;
-  const [state, setState] = useState(data);
-  
+  const [state, setState] = useState<ItemData[] | []>([]);
+
+  let stateData = data;
   useEffect(() => {
     const filterKeys = Object.keys(filterData);
-    let stateData = data;
-    
+    let isFiltered = false;
+
     filterKeys.forEach((key) => {
       if (filterData[key as keyof FilterStateData] !== null) {
+        isFiltered = true;
         stateData = stateData.filter((item) => {
           return item[key as keyof ItemData] === filterData[key as keyof FilterStateData];
         });
+        setState(stateData);
+      }
+      if (!isFiltered) {
+        setState([]);
       }
     });
-
-    setState(stateData);
   }, [filterData, data]);
 
   return (

@@ -17,7 +17,7 @@ export default function FilterTableComponent ( { filterTableName, filterProps }:
     dispatch({type: 'RESET_FILTER'});
   }
 
-  const onQualityClickHandle = (item: string, quality: string) => {
+  const onQualityClickHandle = (item: string, quality: string | null) => {
     dispatch({type: 'ADD_FILTER', payload: {[item]: quality}});
   }
 
