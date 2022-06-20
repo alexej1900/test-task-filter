@@ -42,5 +42,5 @@ export interface TQuality {
 export interface QualityProps {
   reset: string; 
   item: string;
-  onClick: (item: string, quality: string) => void
+  onClick: (item: string, quality: string | null) => void
 }

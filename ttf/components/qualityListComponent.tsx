@@ -8,8 +8,13 @@ export default function QualityListComponent ({reset, item, onClick}: QualityPro
   const [isQualityClicked, setQualityIsClicked] = useState(reset);
 
   const onQualityClickHandle = (quality: string) => {
-    setQualityIsClicked(quality);
-    onClick(item, quality);
+    if(isQualityClicked === quality) {
+      setQualityIsClicked(reset);
+      onClick(item, null);
+    } else {
+      setQualityIsClicked(quality);
+      onClick(item, quality);
+    }
   };
 
   useEffect(() => {
