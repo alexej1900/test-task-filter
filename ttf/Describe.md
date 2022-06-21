@@ -30,12 +30,24 @@ When laying out the application, semantic tags were used: header, main, button, 
 
 
 ## Application operation and applied solutions
-1) After creating the application, a page opens with a button that leads to the filter page.
+1) After creating the application, a page opens with a button that leads to the filter page. When the server is down, an error page is shown with the option to return to the main page. (Server error is caught by try/catch blocks when processing an asynchronous request to the server).
+
+<img src="https://user-images.githubusercontent.com/71667926/174854091-900767d1-6a3f-4b3a-9910-0f9dbe9839de.png" width="500">
+
 2) On the filter page, all elements are interactive, except for the rows with products. From the requirements, there is no understanding of whether this is necessary. All clickable elements are implemented like buttons.
 3) First, a page opens with the "Walzstahl" tab active. The "Alle produkten" block displays all products with the "Walzstahl" parameter. These products are filtered from the database by a query parameter.
+
+<img src="https://user-images.githubusercontent.com/71667926/174854579-13372cf6-f210-4d10-bfe7-d69f073e48dc.png" width="500">
+
 When you click on the "Blankstahl" tab, you go to another page where products are filtered from the database by the "Blankstahl" parameter.
 Above the block "Alle produkten" there is a block for filtered products. Initially, if no filtering options are selected, it is empty.
-4) A filter is opened to filter products. When you click on the required cell, the products are filtered by the selected parameter. Redax is used to store the filter parameters. In the React component, to track changes in filter data and product data, the useEffect hook is used, which is triggered only when these data change.
-5) Filter parameters can be reset by clicking on the cross under the filter table.
+
+<img src="https://user-images.githubusercontent.com/71667926/174855271-a823be83-6997-420e-9ead-dca1ceab0e11.png" width="500">
+
+3) A filter is opened to filter products. When you click on the required cell, the products are filtered by the selected parameter.
+
+<img src="https://user-images.githubusercontent.com/71667926/174854855-a613f82d-f7ca-4845-95cf-02fb33757635.png" width="500">
+
+Redax is used to store the filter parameters. In the React component, to track changes in filter data and product data, the useEffect hook is used, which is triggered only when these data change.
+4) Filter parameters can be reset by clicking on the cross under the filter table. Parameters are reset only for the filter under which the reset button is pressed. (Dispatch different types of actions for redux).
 Additionally, I implemented the ability to cancel pressing the filter parameter by clicking on the required cell again.
-6) All elements for setting/resetting filter parameters, all tabs are implemented as buttons
