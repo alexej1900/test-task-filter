@@ -28,8 +28,8 @@ export default function FilterTableComponent ( { filterTableName, filterProps }:
       <div className={style.filterTableHeader}>
         <div className={style.filterTableArrow} onClick={onClickHandle}>
           {isOpen 
-            ? <div className={style.filterTableArrowSign}>&#8249;</div> 
-            : <div className={style.filterTableArrowSign}>&#8250;</div>
+            ? <button className={style.filterTableArrowSign}>&#8249;</button> 
+            : <button className={style.filterTableArrowSign}>&#8250;</button>
           }
           <h2 className={style.filterTableName}>{filterTableName}</h2>
         </div>
@@ -49,7 +49,9 @@ export default function FilterTableComponent ( { filterTableName, filterProps }:
           </ul>
             <div className={style.filterTableReset}>
               <p className={style.filterTableResetText}>Auswahl löschen</p>
-              <div className={style.filterTableResetButton} onClick={onCloseClickHandle}>&times;</div>
+              <button className={style.filterTableResetButton} onClick={onCloseClickHandle}>
+                &times;
+              </button>
             </div>
         </>
         ) : null
