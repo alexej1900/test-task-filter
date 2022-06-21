@@ -12,10 +12,7 @@
     display: flex;
     width: 70%;
     min-width: 210px;
-    font-size: 40px;
-    font-weight: 900;
-    color: rgb(255, 0, 0);
-
+    
     @media all and (max-width: 480px) {
       min-width: 160px;
     }
@@ -25,6 +22,9 @@
     }
 
     &Sign {
+      font-size: 40px;
+      font-weight: 900;
+      color: rgb(255, 0, 0);
       transform: rotate(90deg);
     }
 

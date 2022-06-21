@@ -22,19 +22,18 @@ export default function QualityListComponent ({reset, item, onClick}: QualityPro
   }, [reset]);
 
   return (
-    <ul className={style.filterTableQuality}>
+    <div className={style.filterTableQuality}>
       {Object.keys(QUALITY).map((quality) => (
-        <li 
+        <button 
           key={quality} 
+          onClick={() => onQualityClickHandle(QUALITY[quality as keyof TQuality])}
           className={isQualityClicked !== QUALITY[quality as keyof TQuality]
             ? `${style.filterTableCell}` 
             : `${style.filterTableCell} ${style.filterTableCellActive}`}
         >
-          <div onClick={() => onQualityClickHandle(QUALITY[quality as keyof TQuality])}>
-            {quality}
-          </div>
-        </li>
+          {quality}
+        </button>
       ))}
-    </ul>
+    </div>
   )
 }

@@ -7,7 +7,9 @@ export default function HeaderComponent () {
       <h1 className={styles.title}>Unser Stahl für Ihre Anforderungen</h1>
       <div className={styles.headerRightBlock}>
         <ContactComponent/>
-      <div className={styles.closeButton}>&times;</div>
+      <button className={styles.closeButton}>
+        &times;
+      </button>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ export default function TableTabComponent (
   ) {
   return (
     <Link href={`/filter/${text.toLowerCase()}`}>
-      <div 
+      <button 
         className={active 
           ? `${style.tabBlock}` 
           : `${style.tabBlock} ${style.active}`
@@ -14,7 +14,7 @@ export default function TableTabComponent (
         onClick={onClick}
       >
         {text}
-      </div>
+      </button>
     </Link>
   )
 }
