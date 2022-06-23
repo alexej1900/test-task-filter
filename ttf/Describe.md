@@ -49,5 +49,6 @@ Above the block "Alle produkten" there is a block for filtered products. Initial
 <img src="https://user-images.githubusercontent.com/71667926/174854855-a613f82d-f7ca-4845-95cf-02fb33757635.png" width="500">
 
 Redax is used to store the filter parameters. In the React component, to track changes in filter data and product data, the useEffect hook is used, which is triggered only when these data change.
+
 4) Filter parameters can be reset by clicking on the cross under the filter table. Parameters are reset only for the filter under which the reset button is pressed. (Dispatch different types of actions for redux).
 Additionally, I implemented the ability to cancel pressing the filter parameter by clicking on the required cell again.
