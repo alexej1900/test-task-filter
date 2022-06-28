@@ -23,7 +23,8 @@ Responsiveness of the application was tested in Google Chrome browser Version 10
 I didn't create a pixel-perfect app, but I tried to make the app look like a picture.
 For style writing, I used Styled components + SCSS.
 
-6) Semantic layout
+6) Semantic layout.
+
 When laying out the application, semantic tags were used: header, main, button, and h1 (for the main title).
 
 7) The application is built as a SPA.
